@@ -1,10 +1,11 @@
-import pdfMake from 'pdfmake/build/pdfmake';
+import * as pdfMake from "pdfmake/build/pdfmake";
 import * as pdfFonts from 'pdfmake/build/vfs_fonts';
+
+(pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
 import printjs from 'print-js';
 
 
 // Asignar los archivos de fuentes al vfs de pdfMake
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 
 const createPdf = async (props: any, output = 'print') => {
