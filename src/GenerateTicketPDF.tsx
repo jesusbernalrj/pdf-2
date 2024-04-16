@@ -1,7 +1,7 @@
 import * as pdfMake from "pdfmake/build/pdfmake";
-import * as pdfFonts from 'pdfmake/build/vfs_fonts';
+// import * as pdfFonts from 'pdfmake/build/vfs_fonts';
 
-(pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
+// (pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
 import printjs from 'print-js';
 
 
