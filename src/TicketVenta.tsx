@@ -51,11 +51,10 @@ export default function App() {
       </div>
       {message && <p className="mx-alert-info">{message}</p>}
       {base64 && (
-        <h1>hola</h1>
-        // <iframe
-        //   src={`data:application/pdf;base64,${base64}`}
-        //   className="mx-iframe"
-        // />
+        <iframe
+          src={`data:application/pdf;base64,${base64}`}
+          className="mx-iframe"
+        />
       )}
     </div>
   );
